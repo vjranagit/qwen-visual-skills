@@ -20,8 +20,8 @@ Fork destinations and skill paths are taken from the publication results; all li
 | `qwen-svg-infographic` | [vjranagit/skillstead](https://github.com/vjranagit/skillstead/tree/main/skills/qwen-svg-infographic) | v5 (6.2/10) | 1: 4.7, 2: 4.2, 3: 4.5, 4: 5.0, 5: 6.2, 6: 6.0 | ![poster](examples/svg-infographic.png) |
 | `qwen-video-shotcraft` | [vjranagit/video-shotcraft](https://github.com/vjranagit/video-shotcraft/tree/main/qwen-video-shotcraft) | v3 (5.3/10) | 1: 4.5, 2: 5.0, 3: 5.3 | ![poster](examples/video-shotcraft.png) |
 | `qwen-baoyu-diagram` | [vjranagit/baoyu-skills](https://github.com/vjranagit/baoyu-skills/tree/main/skills/qwen-baoyu-diagram) | v2 (8.0/10) | 1: 7.5, 2: 8.0, 3: 7.0, 4: 5.3, 5: 5.5, 6: 5.2 | ![poster](examples/baoyu-diagram.png) |
-| `qwen-canvas-design` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/['skills/qwen-canvas-design', 'skills/qwen-slack-gif-creator']) | v2 (6.7/10) | 1: 4.5, 2: 6.7, 3: 5.0 | ![poster](examples/canvas-design.png) |
-| `qwen-slack-gif-creator` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/['skills/qwen-canvas-design', 'skills/qwen-slack-gif-creator']) | v2 (5.8/10) | 1: 4.0, 2: 5.8, 3: 5.5 | ![poster](examples/slack-gif-creator.png) |
+| `qwen-canvas-design` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/skills/qwen-canvas-design) | v2 (6.7/10) | 1: 4.5, 2: 6.7, 3: 5.0 | ![poster](examples/canvas-design.png) |
+| `qwen-slack-gif-creator` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/skills/qwen-slack-gif-creator) | v2 (5.8/10) | 1: 4.0, 2: 5.8, 3: 5.5 | ![poster](examples/slack-gif-creator.png) |
 | `qwen-remotion` | Hub only; no upstream fork | v2 (5.7/10) | 1: 4.5, 2: 5.7, 3: 5.5 | ![poster](examples/remotion.png) |
 
 Full per-attempt score records are in [results/scores.csv](results/scores.csv).
@@ -31,8 +31,8 @@ Full per-attempt score records are in [results/scores.csv](results/scores.csv).
 Clone the desired fork, then symlink its skill directory into the agent's skills folder. Run the skill's setup script if provided.
 
 ```sh
-git clone https://github.com/vjranagit/<fork>.git
-ln -s "$PWD/<fork>/<skill-path>" <agent-skills-folder>/<skill-name>
+git clone <fork-repository-url>
+ln -s "$PWD/<cloned-fork>/<skill-directory>" <agent-skills-folder>/<skill-name>
 ```
 
 - **Hermes Agent:** link into `~/.hermes/skills/` (or the configured skills directory).
