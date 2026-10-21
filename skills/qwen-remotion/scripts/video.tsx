@@ -3,7 +3,7 @@
 // above, backward links arc below, so loops read as cycles). On mount it checks the real rendered
 // geometry and throws "FIX: ..." (text overflow, overlaps, links through parts) so make.sh can report it.
 import React, { useLayoutEffect, useRef } from 'react';
-import { AbsoluteFill, Composition, Easing, interpolate, registerRoot, spring, useCurrentFrame } from 'remotion';
+import { Composition, Easing, interpolate, registerRoot, spring, useCurrentFrame } from 'remotion';
 import raw from './data.json';
 
 type Pt = [number, number];
@@ -96,7 +96,7 @@ const Explainer: React.FC = () => {
   const glow = 0.5 + 0.5 * Math.sin(frame / 8);
   const pop = spring({ frame: local - 6, fps: FPS, config: { damping: 12 } });
   return (
-    <AbsoluteFill ref={root} style={{ background: PAPER, color: INK, fontFamily: FONT, overflow: 'hidden' }}>
+    <div ref={root} style={{ position: 'absolute', inset: 0, background: PAPER, color: INK, fontFamily: FONT, overflow: 'hidden' }}>
       <div data-box="the title" style={{ position: 'absolute', left: 60, top: 36, width: 1500 }}>
         <div data-fit={D.title} style={{ ...line(52, 800, INK), letterSpacing: -1 }}>{D.title}</div>
         <div data-fit={D.subtitle} style={{ ...line(29, 500, SLATE), marginTop: 6 }}>{D.subtitle}</div>
@@ -146,7 +146,7 @@ const Explainer: React.FC = () => {
           {Object.entries(sc.focus).filter(([, v]) => v).map(([k, v]) => <div key={k} style={{ width: nodeW - 32 }}><div data-fit={v} style={chipStyle(nodes[k].color)}>{v}</div></div>)}
         </div>)}
       </div>
-    </AbsoluteFill>
+    </div>
   );
 };
 
