@@ -2,9 +2,9 @@ tool,attempt,topic,overall,accuracy,diagram,readability,layout,adherence,density
 qwen-antv-infographic,1,AutoCAD 2D drafting workflow,5.2,6,6,3,5,9,2,v3
 qwen-antv-infographic,2,"automatic transmission hydraulic control: torque converter + lock-up, 2 planetary sets, clutch packs/bands, valve body, shift solenoids, TCU sensors and shift-logic feedback",5.8,6,6,5,6,7,5,v3
 qwen-antv-infographic,3,"Raft consensus: leader election, terms, log replication, commit index, network partition, split vote, recovery",6.2,6,6,5,6,7,7,v3
-qwen-baoyu-diagram,1,vapor-compression refrigeration cycle,7.5,6,9,6,9,10,,v2
-qwen-baoyu-diagram,2,6-axis robot arm kinematic chain,8.0,6,9,7,10,9,,v2
-qwen-baoyu-diagram,3,merge sort recursion tree,7.0,8,6,7,10,9,,v2
+qwen-baoyu-diagram,1,vapor-compression refrigeration cycle,7.5,6,9,6,9,10,5,v2
+qwen-baoyu-diagram,2,6-axis robot arm kinematic chain,8.0,6,9,7,10,9,7,v2
+qwen-baoyu-diagram,3,merge sort recursion tree,7.0,8,6,7,10,9,2,v2
 qwen-baoyu-diagram,4,"combined-cycle power plant: gas turbine, HRSG (HP/IP/LP drums), steam turbine, condenser, cooling tower, feedwater loop, bypass, control loops",5.3,5,4,6,8,7,2,v2
 qwen-baoyu-diagram,5,"CAN bus vehicle network: ECUs (engine, ABS, airbag, BCM, infotainment), gateway, multiple buses (powertrain/body/diagnostic), arbitration, error frames.",5.5,5,5,6,6,6,5,v2
 qwen-baoyu-diagram,6,"LSM-tree storage engine: memtable, WAL, immutable memtable, flush, SSTable levels, compaction, bloom filters, read path vs write path",5.2,5,4,7,7,6,2,v2
@@ -14,9 +14,9 @@ qwen-canvas-design,3,"radix-2 FFT for N=8: butterfly network, bit-reversal order
 qwen-carousel,1,"GD&T: datums, feature control frames, tolerance zones, MMC/LMC, tolerance stack-up",3.9,5.0,1.5,7.0,4.5,3.5,2.0,v3
 qwen-carousel,2,"FEA workflow: meshing, element types, boundary conditions, solver, stress/strain results, convergence.",5.6,5.5,3.5,6.5,6.0,7.0,5.0,v3
 qwen-carousel,3,"graph algorithm map: BFS, DFS, Dijkstra, A*, Bellman-Ford, Floyd-Warshall, Prim, Kruskal, topo sort - when to use, complexity, failure cases.",6.3,6.5,5.0,7.0,6.5,7.0,6.0,v3
-qwen-diagram-design,1,four-stroke engine cycle,6.5,9,4,8,9,6,,v1
-qwen-diagram-design,2,planetary gear train power flow,5.0,7,3,6,5,6,,v1
-qwen-diagram-design,3,Dijkstra shortest-path algorithm,5.0,7,4,6,3,4,,v1
+qwen-diagram-design,1,four-stroke engine cycle,6.5,9,4,8,9,6,3,v1
+qwen-diagram-design,2,planetary gear train power flow,5.0,7,3,6,5,6,3,v1
+qwen-diagram-design,3,Dijkstra shortest-path algorithm,5.0,7,4,6,3,4,6,v1
 qwen-diagram-design,4,"turbocharged diesel engine air path: compressor, intercooler, intake manifold, EGR loop + cooler, exhaust manifold, turbine, wastegate/VGT, DPF/SCR aftertreatment, ECU sensor feedback",4.2,4,3,6,5,5,2,v1
 qwen-diagram-design,5,"Blender geometry-nodes procedural building generator: inputs, instancing, attribute flow, randomization, realize/merge, LOD branches",5.3,5,6,5,5,6,5,v1
 qwen-diagram-design,6,"Paxos + Multi-Paxos message flow: proposers, acceptors, learners, prepare/promise, accept/accepted, leader lease, failure + retry branches",5.0,4,5,6,6,5,4,v1
@@ -29,9 +29,9 @@ qwen-remotion,3,"dual-clutch transmission: odd/even shafts, two clutches, pre-se
 qwen-slack-gif-creator,1,"V6 firing order: 6 pistons, crank phase angles, intake/exhaust valve timing",4.0,3,2,5,5,8,1,v2
 qwen-slack-gif-creator,2,Dijkstra on a 9-node weighted graph with priority-queue updates per step,5.8,5,5,7,7,6,5,v2
 qwen-slack-gif-creator,3,"planetary gear set: sun, 3 planets, ring, carrier all rotating, with speed ratio readout",5.5,5,4,7,6,6,5,v2
-qwen-svg-infographic,1,hydraulic disc brake system,4.7,6,2,8,5,3,,v5
-qwen-svg-infographic,2,Blender hard-surface modeling workflow,4.2,6,3,6,4,6,,v5
-qwen-svg-infographic,3,A* pathfinding,4.5,5,2,8,7,5,,v5
+qwen-svg-infographic,1,hydraulic disc brake system,4.7,6,2,8,4,6,2,v5
+qwen-svg-infographic,2,Blender hard-surface modeling workflow,4.2,6,2,6,4,5,2,v5
+qwen-svg-infographic,3,A* pathfinding,4.5,6,2,7,4,5,3,v5
 qwen-svg-infographic,4,"aircraft hydraulic systems: 3 independent systems (A/B/standby), EDP/EMP/RAT pumps, reservoirs, PTU, priority valves, consumers (flight controls, gear, brakes, spoilers)",5.0,5,2,7,7,7,2,v5
 qwen-svg-infographic,5,"AutoCAD Civil 3D corridor model: alignment, profile, assembly/subassemblies, corridor regions, surfaces, sections, quantity takeoff",6.2,6,6,5,6,8,6,v5
 qwen-svg-infographic,6,"CPU out-of-order pipeline: fetch, decode, rename (RAT), reservation stations, ROB, execution units, load/store queue, branch predictor + misprediction flush",6.0,5,6,6,6,7,6,v5
