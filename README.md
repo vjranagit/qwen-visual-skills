@@ -1,6 +1,6 @@
 # Qwen Visual Skills
 
-Eleven weak-model wrapper skills for local LLMs, tuned on qwen3.8-27b via Hermes Agent. Each wrapper carries the task-specific instructions and rendering logic so the model can create visual content from a short prompt.
+Eleven weak-model wrapper skills for local LLMs, tuned on qwen3.8-27b via Hermes Agent. Each wrapper carries the purpose-built instructions and rendering logic so the model can create visual content from a short prompt.
 
 ## Method
 
@@ -13,7 +13,7 @@ Fork paths below are expected paths until each fork's publication result is avai
 | Skill | Fork / path | Best version | Score history (attempt: overall) | Example |
 |---|---|---:|---|---|
 | `qwen-diagram-design` | [vjranagit/diagram-design](https://github.com/vjranagit/diagram-design/tree/main/skills/qwen-diagram-design) | v1 (6.5/10) | 1: 6.5, 2: 5.0, 3: 5.0, 4: 4.2, 5: 5.3, 6: 5.0 | ![poster](examples/diagram-design.png) |
-| `qwen-antv-infographic` | [vjranagit/Infographic](https://github.com/vjranagit/Infographic/tree/main/skills/qwen-antv-infographic) — pending | v3 (6.2/10) | 1: 5.2, 2: 5.8, 3: 6.2 | ![poster](examples/antv-infographic.png) |
+| `qwen-antv-infographic` | [vjranagit/Infographic](https://github.com/vjranagit/Infographic/tree/main/qwen-antv-infographic) | v3 (6.2/10) | 1: 5.2, 2: 5.8, 3: 6.2 | ![poster](examples/antv-infographic.png) |
 | `qwen-visual-explainer` | [vjranagit/visual-explainer](https://github.com/vjranagit/visual-explainer/tree/main/skills/qwen-visual-explainer) | v3 (5.5/10) | 1: 3.5, 2: 5.2, 3: 5.5 | ![poster](examples/visual-explainer.png) |
 | `qwen-live-panel` | [vjranagit/live-panel-skill](https://github.com/vjranagit/live-panel-skill/tree/main/qwen-live-panel/) | v2 (6.0/10) | 1: 5.3, 2: 6.0, 3: 5.5 | ![poster](examples/live-panel.png) |
 | `qwen-carousel` | [vjranagit/amigoscode-skills](https://github.com/vjranagit/amigoscode-skills/tree/main/skills/qwen-carousel) | v3 (6.3/10) | 1: 3.9, 2: 5.6, 3: 6.3 | ![poster](examples/carousel.png) |
