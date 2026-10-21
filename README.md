@@ -1,6 +1,6 @@
 # Qwen Visual Skills
 
-Eleven weak-model wrapper skills for local LLMs, tuned on qwen3.8-27b via Hermes Agent. Each wrapper carries the purpose-built instructions and rendering logic so the model can create visual content from a short prompt.
+Eleven artifact-making weak-model wrapper skills for local LLMs, tuned on qwen3.8-27b via Hermes Agent. The hub also includes the experimental `qwen-prompt-architect` two-stage tool, whose mixed results are summarized below.
 
 ## Method
 
@@ -25,6 +25,18 @@ Fork destinations and skill paths are taken from the publication results; all li
 | `qwen-remotion` | Hub only; no upstream fork | v2 (5.7/10) | 1: 4.5, 2: 5.7, 3: 5.5 | ![poster](examples/remotion.png) |
 
 Full per-attempt score records are in [results/scores.csv](results/scores.csv).
+
+## Two-stage: Qwen writes its own brief
+
+The optional [`qwen-prompt-architect` skill](skills/qwen-prompt-architect/) asks Qwen to write a topic-specific brief, then hands that brief to a target skill in a fresh Hermes session. Across three iterations, this process did not beat direct baseline generation overall:
+
+| Iteration | Topic | Two-stage mean | Baseline mean | Outcome |
+|---:|---|---:|---:|---|
+| 1 | Turbocharged diesel engine | 6.1 | 6.0 | Two-stage +0.1 |
+| 2 | LSM tree storage engine | 6.3 | 6.5 | Baseline +0.2 |
+| 3 | Blender geometry nodes | 3.9 | 6.1 | Baseline +2.2 |
+
+In iteration 3, the carousel's stage 2 was truncated at the output-token limit and produced no artifact; its 1.0 is the rubric floor for pipeline failure, not a content score. A recurring lesson was that mandatory loop and branch requirements could make Qwen invent feedback paths when the topic did not support them. Treat the two-stage route as experimental, not a quality guarantee.
 
 ## Install
 
