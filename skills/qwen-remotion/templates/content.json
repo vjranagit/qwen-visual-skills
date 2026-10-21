@@ -1,0 +1,27 @@
+{
+  "title": "Hydronic home heating loop",
+  "subtitle": "How a thermostat, boiler and pump keep two rooms near 20 °C",
+  "lanes": [
+    {"name": "Control", "parts": [["Thermostat", "compares room to 20 °C"], ["Boiler control", "switches the burner"]]},
+    {"name": "Heat source", "parts": [["Burner", "fires gas at 24 kW"], ["Heat exchanger", "heats water to 70 °C"], ["Circulator pump", "moves 12 L/min"]]},
+    {"name": "Rooms in parallel", "parts": [["Return pipe", "water back at 50 °C"], ["Radiator 1", "living room, 1.2 kW"], ["Radiator 2", "bedroom, 0.8 kW"]]}
+  ],
+  "links": [
+    ["Thermostat", "Boiler control", "calls heat"],
+    ["Boiler control", "Burner", "ignites"],
+    ["Burner", "Heat exchanger", "heats"],
+    ["Heat exchanger", "Circulator pump", "hot water"],
+    ["Circulator pump", "Radiator 1", "feeds"],
+    ["Circulator pump", "Radiator 2", "feeds"],
+    ["Radiator 1", "Return pipe", ""],
+    ["Radiator 2", "Return pipe", ""],
+    ["Return pipe", "Heat exchanger", "reheat"]
+  ],
+  "scenes": [
+    {"say": "The room cools below its set point, so the thermostat asks the boiler for heat.", "focus": {"Thermostat": "19.5 °C", "Boiler control": "call", "Burner": "off"}},
+    {"say": "The burner fires and the exchanger lifts the water to 70 degrees.", "focus": {"Boiler control": "on", "Burner": "24 kW", "Heat exchanger": "70 °C"}},
+    {"say": "The pump pushes hot water through both radiators at the same time.", "focus": {"Heat exchanger": "70 °C", "Circulator pump": "12 L/min", "Radiator 1": "warming", "Radiator 2": "warming"}},
+    {"say": "Cooled water returns to be reheated, so the loop repeats while heat is called.", "focus": {"Radiator 1": "", "Radiator 2": "", "Return pipe": "50 °C", "Heat exchanger": "reheat"}},
+    {"say": "At 20 degrees the thermostat stops the call and the burner shuts off.", "focus": {"Thermostat": "20.0 °C", "Boiler control": "idle", "Burner": "off", "Circulator pump": "overrun 2 min"}}
+  ]
+}
