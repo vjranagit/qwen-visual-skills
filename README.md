@@ -8,7 +8,7 @@ The loop is: Qwen generates from a one-sentence prompt → an AI critic scores a
 
 ## Skills
 
-Fork paths below are expected paths until each fork's publication result is available; entries marked pending are not yet confirmed. Poster images are illustrative output from the best-scoring recorded attempt.
+Fork destinations and skill paths are taken from the publication results; all listed forks were confirmed. Poster images are illustrative output from the best-scoring recorded attempt.
 
 | Skill | Fork / path | Best version | Score history (attempt: overall) | Example |
 |---|---|---:|---|---|
@@ -20,8 +20,8 @@ Fork paths below are expected paths until each fork's publication result is avai
 | `qwen-svg-infographic` | [vjranagit/skillstead](https://github.com/vjranagit/skillstead/tree/main/skills/qwen-svg-infographic) | v5 (6.2/10) | 1: 4.7, 2: 4.2, 3: 4.5, 4: 5.0, 5: 6.2, 6: 6.0 | ![poster](examples/svg-infographic.png) |
 | `qwen-video-shotcraft` | [vjranagit/video-shotcraft](https://github.com/vjranagit/video-shotcraft/tree/main/qwen-video-shotcraft) | v3 (5.3/10) | 1: 4.5, 2: 5.0, 3: 5.3 | ![poster](examples/video-shotcraft.png) |
 | `qwen-baoyu-diagram` | [vjranagit/baoyu-skills](https://github.com/vjranagit/baoyu-skills/tree/main/skills/qwen-baoyu-diagram) | v2 (8.0/10) | 1: 7.5, 2: 8.0, 3: 7.0, 4: 5.3, 5: 5.5, 6: 5.2 | ![poster](examples/baoyu-diagram.png) |
-| `qwen-canvas-design` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/skills/qwen-canvas-design) — pending | v2 (6.7/10) | 1: 4.5, 2: 6.7, 3: 5.0 | ![poster](examples/canvas-design.png) |
-| `qwen-slack-gif-creator` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/skills/qwen-slack-gif-creator) — pending | v2 (5.8/10) | 1: 4.0, 2: 5.8, 3: 5.5 | ![poster](examples/slack-gif-creator.png) |
+| `qwen-canvas-design` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/['skills/qwen-canvas-design', 'skills/qwen-slack-gif-creator']) | v2 (6.7/10) | 1: 4.5, 2: 6.7, 3: 5.0 | ![poster](examples/canvas-design.png) |
+| `qwen-slack-gif-creator` | [vjranagit/anthropic-skills](https://github.com/vjranagit/anthropic-skills/tree/main/['skills/qwen-canvas-design', 'skills/qwen-slack-gif-creator']) | v2 (5.8/10) | 1: 4.0, 2: 5.8, 3: 5.5 | ![poster](examples/slack-gif-creator.png) |
 | `qwen-remotion` | Hub only; no upstream fork | v2 (5.7/10) | 1: 4.5, 2: 5.7, 3: 5.5 | ![poster](examples/remotion.png) |
 
 Full per-attempt score records are in [results/scores.csv](results/scores.csv).
